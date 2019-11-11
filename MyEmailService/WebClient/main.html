@@ -3,9 +3,30 @@
 <head>
     <meta charset="utf-8" />
     <title>Main page</title>
+    <link rel="stylesheet" href="css/general.css">
 </head>
 
 <body>
-    <p>Welcome to your Inbox!</p>
+    <header>
+        <h2>Welcome To your Inbox!</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="EmailList.html" target="emailView">Inbox</a></li>
+            </ul>
+        </nav>
+
+        <article>
+           <!--open up EmailList.html when Inbox is clicked-->
+            <iframe src="EmailList.html" style="border:none" name="emailView"></iframe>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
 </body>
 </html>
