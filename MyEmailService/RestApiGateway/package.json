@@ -1,0 +1,9 @@
+{
+  "name": "rest-api-gateway",
+  "version": "0.0.0",
+  "description": "RestApiGateway",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
