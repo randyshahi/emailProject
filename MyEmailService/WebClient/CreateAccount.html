@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Account Creation</title>
+    <script type="text/javascript"
+            src="js/AccountHandlerService.js"></script>
 </head>
 <body>
 
@@ -10,15 +12,22 @@
         Please Enter an email address and password:<br /><br />
         Email:<br>
         <input type="text" 
-               name="emailAccount"><br>
+               name="emailAccount"
+               id="emailAccount"><br>
         Password:<br>
         <input type="password" 
-               name="emailPassword"><br>
+               name="emailPassword"
+               id="emailPassword"><br>
         Confirm password:<br>
         <input type="password" 
-               name="emailPassword"><br><br>
+               name="emailPasswordConfirm"
+               id="emailPasswordConfirm"><br><br>
         <input type="submit" 
-               value="Submit">
+               value="Submit"
+               onclick="CreateNewAccount(
+        document.getElementById('emailAccount').value,
+        document.getElementById('emailPassword').value,
+        document.getElementById('emailPasswordConfirm').value)">
     </form>
 
 

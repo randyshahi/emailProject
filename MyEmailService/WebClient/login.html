@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Login Page</title>
-    <script type="text/javascript" 
+    <script type="text/javascript"
             src="js/AccountHandlerService.js"></script>
 </head>
 <body>
@@ -22,15 +22,14 @@
         <input type="submit" 
                value="Submit" 
                onclick="TryLogin(
-                                document.getElementById('emailAccount').value, 
-                                document.getElementById('emailPassword').value)">
+        document.getElementById('emailAccount').value,
+        document.getElementById('emailPassword').value); return false;">
     </form>
 
     <!--This should go to a separate HTML page for now-->
     <form action="CreateAccount.html">
         <input type="submit" 
-               value="Create Account" 
-               onclick="TryLogin(document.getElementById(""))"/>
+               value="Create Account"/>
     </form>
 </body>
 </html>
