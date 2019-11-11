@@ -2,9 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Login Page</title>
+    <script type="text/javascript" 
+            src="js/AccountHandlerService.js"></script>
 </head>
 <body>
+    <p>Welcome to EmailProject</p>
 
+    <!--This should send to a javascript file that will validate the credentials-->
+    <form>
+        Email:<br>
+        <input type="text" 
+               name="emailAccount" 
+               id="emailAccount"><br>
+        Password:<br>
+        <input type="password" 
+               name="emailPassword" 
+               id="emailPassword"><br><br>
+        <input type="submit" 
+               value="Submit" 
+               onclick="TryLogin(
+                                document.getElementById('emailAccount').value, 
+                                document.getElementById('emailPassword').value)">
+    </form>
+
+    <!--This should go to a separate HTML page for now-->
+    <form action="CreateAccount.html">
+        <input type="submit" 
+               value="Create Account" 
+               onclick="TryLogin(document.getElementById(""))"/>
+    </form>
 </body>
 </html>
