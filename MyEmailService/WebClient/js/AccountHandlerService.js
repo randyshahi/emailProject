@@ -7,7 +7,10 @@ function TryLogin(username, password) {
     if (username == adminUsername
         && password == adminPassword) {
         // login was successful, send user to their inbox
-        window.location = 'main.html';
+        // (real logic will submit the infor to the server. this is just for debuggin purposes)
+        window.location = 'main.html'; 
+        event.preventDefault(); //this cancels default behaviour and allow redirect to main.html
+        // stops event propogation outside of this function
     }
     else {
         // login failed, return an alert for now

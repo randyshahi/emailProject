@@ -21,9 +21,9 @@
                id="emailPassword"><br><br>
         <input type="submit" 
                value="Submit" 
-               onclick="TryLogin(
+               onclick="return TryLogin(
         document.getElementById('emailAccount').value,
-        document.getElementById('emailPassword').value); return false;">
+        document.getElementById('emailPassword').value);">
     </form>
 
     <!--This should go to a separate HTML page for now-->
