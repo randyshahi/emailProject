@@ -24,13 +24,22 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebClient", "WebClient\", "
 		SlnRelativePath = "WebClient\"
 	EndProjectSection
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "RestApiGateway", "RestApiGateway\RestApiGateway.njsproj", "{1C00D1ED-847B-4EE7-AB3B-A1CC828BC63D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CA5B848B-D4E4-4845-A16F-B76CB1DCD405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CA5B848B-D4E4-4845-A16F-B76CB1DCD405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5B848B-D4E4-4845-A16F-B76CB1DCD405}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5B848B-D4E4-4845-A16F-B76CB1DCD405}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{1C00D1ED-847B-4EE7-AB3B-A1CC828BC63D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C00D1ED-847B-4EE7-AB3B-A1CC828BC63D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C00D1ED-847B-4EE7-AB3B-A1CC828BC63D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C00D1ED-847B-4EE7-AB3B-A1CC828BC63D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
