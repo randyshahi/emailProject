@@ -1,10 +1,11 @@
 ﻿var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-var User = require('../model/user');
+var User = require('./model/user');
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
 var config = require('./config');
+const isAuthorized = require('./requestAuthenticator');
 
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
@@ -42,7 +43,10 @@ router.post('/login', (req, res) => {
         name: req.body.name,
         email: req.body.email,
         password: hashedPassword
-    }, (err, user) => {
+    }, (req, resp) => {
+        // testing code
+        api.get(req.path).then(resp => {
+            res.send(resp.data)
         // send the user to accountService to see if login was successful
 
         // wait for response from accountService
@@ -59,7 +63,7 @@ router.post('/logout', isAuthorized, (req, res) => {
     // parse out the session ID and remove it from the mongoDB
 
     // return success if session ID removed from mongoDB
-}
+})
 })
 
 // communicate with account service to change password
@@ -68,7 +72,6 @@ router.post('/changeCredentials', isAuthorized, (req, res) => {
     // send the updated credentials to the accoutService and wait
 
     // when response recieved, send success to client
-})
 })
 
 module.exports = router;

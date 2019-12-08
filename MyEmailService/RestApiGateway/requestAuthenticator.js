@@ -1,5 +1,5 @@
 ﻿var jwt = require('jsonwebtoken');
-var config = require('../config')
+var config = require('./config')
 
 module.exports = (req, res, next) => {
     if (!req.headers['authorization']) {
