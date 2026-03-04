@@ -1,2 +1,7 @@
 /emailService/bin
 /emailService/obj
+/emailService/emailServiceTests/bin
+/emailService/emailServiceTests/obj
+/emailService/emailService/bin
+/emailService/emailService/obj
+/emailService/emailService/wwwroot
