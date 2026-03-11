@@ -1,7 +1,10 @@
+using emailService.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<UserService>(new UserService());
 
 var app = builder.Build();
 
